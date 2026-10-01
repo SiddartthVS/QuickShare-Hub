@@ -22,7 +22,7 @@ export async function POST(req) {
     const base64 = Buffer.from(arrayBuffer).toString("base64");
 
     const response = await genai.models.generateContent({
-      model: "gemini-2.0-flash",
+      model: "gemini-2.5-flash",
       contents: [
         {
           parts: [
